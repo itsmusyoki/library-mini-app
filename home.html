@@ -8,7 +8,36 @@
 </head>
 <link rel="stylesheet" href="styles.css">
 <body>
+    <h1>My Library</h1>
+
+    <!-- controls -->
+    <button id="new-book-btn">New Book</button>
+    <!--display-->
     <div id="library-container"></div>
+
+
+    <!--Modal section forms-->
+    <dialog id="book-dialog">
+        <form id="book-form">
+             <h2>Add New Book</h2>
+<!--title, year, publisher, pages, read-->
+            <input type="text" name="title" placeholder="Title" required>
+            <input type="number" name="year" placeholder="Year" required>
+            <input type="text" name="publisher" placeholder="publisher" required>
+            <input type="number" name="pages" placeholder="Number of Pages" required>
+
+            <label>
+                <input type="checkbox" name="read">
+                Mark as Read
+            </label>
+
+            <button type="submit">Add Book</button>
+            <button type="button" id="close-dialog">Cancel</button>
+
+        </form>
+
+    </dialog>
     <script src="library.js"></script>
 </body>
 </html>
+
